@@ -25,7 +25,8 @@ public class AdministradorService{
         return administradorRepository.findById(DNI);
     }
 
-    public Optional<Administrador> getByUser(String user){
+    //Login
+    public Administrador getByUser(String user){
         return administradorRepository.findByUsuario(user);
     }
 

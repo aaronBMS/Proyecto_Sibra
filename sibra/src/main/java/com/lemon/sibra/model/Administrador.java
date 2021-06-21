@@ -4,12 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "administrador")
 public class Administrador {
     
     @Id
-    private int DNI;
+    private int dni;
     private String codigo;
     private String nombre;
     private String apellido;
@@ -22,9 +23,9 @@ public class Administrador {
     public Administrador(){
     }
 
-    public Administrador(int DNI, String codigo, String nombre, String apellido, String correo, 
+    public Administrador(int dni, String codigo, String nombre, String apellido, String correo, 
     int telefono, String cargo, String usuario, String contraseña){
-        this.DNI=DNI;
+        this.dni=dni;
         this.codigo=codigo;
         this.nombre=nombre;
         this.apellido=apellido;
@@ -36,11 +37,11 @@ public class Administrador {
     }
 
     public int getDNI() {
-        return DNI;
+        return dni;
     }
 
     public void setDNI(int dNI) {
-        DNI = dNI;
+        dni = dNI;
     }
 
     public String getCodigo() {
